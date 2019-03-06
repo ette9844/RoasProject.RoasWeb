@@ -1,0 +1,17 @@
+{
+   "notification": {
+     "title": "Portugal vs. Denmark",
+     "body": "5 to 1",
+     "icon": "firebase-logo.png",
+   },
+   "to": "dkAl51GtJ3E:APA91bGlJXmUG03SlLynsxkOlBJwC9N2N17tcUCPI0DiI7kdo5PfWDHLJFGEcDzjcjJXThzkLe5QicqR17XpuQkMkEh0ap0Q17Kfz4EaFBXxQc_CtkhfOnbHeEQ93nAaPgJR5AlT7paf"
+ }
+
+ curl -X POST -H "Authorization: key=YOUR-SERVER-KEY" -H "Content-Type: application/json" -d '{
+   "notification": {
+     "title": "Portugal vs. Denmark",
+     "body": "5 to 1",
+     "icon": "firebase-logo.png",
+   },
+   "to": "dkAl51GtJ3E:APA91bGlJXmUG03SlLynsxkOlBJwC9N2N17tcUCPI0DiI7kdo5PfWDHLJFGEcDzjcjJXThzkLe5QicqR17XpuQkMkEh0ap0Q17Kfz4EaFBXxQc_CtkhfOnbHeEQ93nAaPgJR5AlT7paf"
+ }' "https://fcm.googleapis.com/fcm/send"

@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+<!--
+semantic-UI 를 사용
+-->
+    <title> Team. Roas </title>
+    <style>
+    div.top{
+      position: fixed;
+      right: 350px;
+      width: 60%;
+      height: 50px;
+      background-color: white;
+      text-align: right;
+      z-index: 2;
+    }
+    #viewId{
+      position: relative;
+      top: 12px;
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 8px;
+    }
+    #logout{
+      position: relative;
+      top: 10px;
+      font-size: 14px;
+    }
+    #backSelect{
+      position: relative;
+      top: 10px;
+      font-size: 14px;
+    }
+    div.left{
+      position: relative;
+      float: left;
+      top: 45px;
+      padding-bottom: 70px;
+      width: 60%;
+      margin-bottom: 2px;
+      z-index: 1;
+    }
+    button.inverted{
+      margin: 10px;
+      width: 150px;
+      height: 150px;
+      font-weight: bold;
+    }
+    div.right{
+      position: fixed;
+      right: 13px;
+      float: right;
+      width: 300px;
+      height: 97%;
+      background-color : #FF5A5A;
+      margin-top: 10px;
+      z-index: 5;
+    }
+    table.list_top{
+      position: relative;
+      left: 10.5%;
+      width: 80%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    table.list{
+      position: relative;
+      left: 30px;
+      width: 80%;
+      margin-top: 10px;
+      color : white;
+    }
+    td.sum{
+      position: relative;
+      direction: rtl;
+      right: 8%;
+      padding : 5px;
+    }
+    th.list_middle{
+      position: relative;
+      margin-top: 2px;
+    }
+    th.list_right{
+      position: relative;
+      direction: rtl;
+    }
+    td.title{
+      position: relative;
+      left: 30.5%;
+      height: 15px;
+      color: white;
+    }
+    table.list_bottom{
+      position: fixed;
+      right: 30px;
+      width: 250px;
+      height: 30px;
+      bottom: 100px;
+      margin-top: 10px;
+      color: white;
+      margin-top: 10px;
+    }
+    #payment{
+      position: fixed;
+      width: 250px;
+      height: 50px;
+      right: 35px;
+      bottom: 40px;
+      font-size: 20px;
+      color: #FF5A5A;
+      background-color: white;
+    }
+    div.buttons{
+      width: 230px;
+      height: 60px;
+      position: fixed;
+      bottom: 1px;
+      left: 10px;
+      background-color: white;
+      z-index: 3;
+    }
+    #total{
+      position: relative;
+      width: 100px;
+      direction: ltr;
+    }
+    #identify{
+      position: relative;
+      left: 8%;
+      top: 20%;
+      font-weight: bold;
+    }
+    #menu{
+      position: relative;
+      left: 7%;
+      top: 20%;
+      font-weight: bold;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <label id="viewId"> </label>
+      <button id="logout" class="small ui red basic button"> logout</button>
+      <button id="backSelect" class="small ui blue basic button"> 이전 페이지</button>
+    </div>
+    <div class="left" id="left">
+    </div>
+    <div class="right">
+      <table class="list_top">
+        <tr id="tableName">
+          <td colspan="2" class="title">n번째 테이블</td>
+        </tr>
+      </table>
+      <table class="list" id="foodsName">
+      </table>
+      <table class="list_bottom" id="list_bottom">
+        <tr>
+          <th class="list_middle">총 액 : </th>
+          <th class="list_right" id="total">0</th>
+        </tr>
+      </table>
+      <button id="payment" class="ui button">결 제 완 료</button>
+    </div>
+    <div class="buttons">
+      <button id="menu" class="small ui black basic button">메뉴 확인</button>
+      <button id="identify" class="small ui black basic button">결제 확인</button>
+    </div>
+
+    <!--web app manifest-->
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="counterApp.js"></script>
+  </body>
+</html>

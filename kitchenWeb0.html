@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+<!--
+semantic-UI 를 사용
+-->
+    <meta charset="utf-8">
+    <title>
+      Team. Roas
+    </title>
+    <style>
+    div.top{
+      float: right;
+      width: 60%;
+      height: 50px;
+      background-color: white;
+      text-align: right;
+      margin-right: 15px;
+    }
+    #viewId{
+      position: relative;
+      top: 12px;
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 8px;
+    }
+    #logout{
+      position: relative;
+      top: 10px;
+      font-size: 14px;
+    }
+    #backSelect{
+      position: relative;
+      top: 10px;
+      font-size: 14px;
+    }
+    div.middle{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -150%)
+    }
+    div.middle_title{
+      position: relative;
+      top:60px;
+      height: 100px;
+      width: 450px;
+    }
+    h1.header{
+      position:absolute;
+      left:50%;
+      transform:translate(-50%, -50%)
+    }
+    #complete_button
+    {
+      position: relative;
+      top:15px;
+      float: right;
+      width: 130px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    #container{
+      position: relative;
+      top:25px;
+      width: 450px;
+    }
+    th.table_complete{
+      width: 30px;
+    }
+    </style>
+  </head>
+  <body style="padding-top:2rem">
+    <div class="top">
+      <label id="viewId"> </label>
+      <button id="logout" class = "small ui red basic button"> logout</button>
+      <button id="backSelect" class = "small ui blue basic button"> 이전 페이지</button>
+    </div>
+    <div class="middle">
+      <div class="middle_title">
+        <h1 class="ui header">주문현황</h1>
+        <button id="complete_button" class="ui red button" float="right">완료 주문 보기</button>
+      </div>
+      <div class="ui main text container" id="container">
+      </div>
+    </div>
+
+    <!--java script-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script type="text/javascript" src="kitchenWeb.js"></script>
+
+    <script>
+    $(document).keyup(function(event)
+    {
+      if(event.keyCode == 13)
+      {
+          $("button[id|='cButton']").first().click();
+          console.log('enter input');
+      }
+    });
+    </script>
+  </body>
+</html>

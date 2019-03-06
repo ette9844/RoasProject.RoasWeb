@@ -1,0 +1,112 @@
+{
+  "test" : {
+    "menu" : {
+      "chiken" : {
+        "contents" : "칰멘",
+        "count" : 100,
+        "pic" : "",
+        "price" : "18000"
+      },
+      "soda" : {
+        "contents" : "소다",
+        "count" : 40,
+        "pic" : "",
+        "price" : 2000
+      }
+    },
+    "order" : {
+      "1" : {
+      "foods" : {
+        "chiken" : {
+          "number" : 2,
+          "sum" : 36000
+        },
+        "pizza" : {
+          "number" : 1,
+          "sum" : 20000
+        }
+      },
+      "sum" : 56000
+      },
+      "2": {
+        "foods" : {
+          "chiken" : {
+            "number" : 4,
+            "sum" : 72000
+            },
+          "pizza" : {
+            "number" : 2,
+            "sum" : 40000
+          }
+        },
+      "sum" : 112000
+    } ,"3": {
+      "foods" : {
+        "chiken" : {
+          "number" : 5,
+          "sum" : 90000
+        },
+        "pizza" : {
+          "number" : 3,
+          "sum" : 60000
+        }
+      },
+      "sum" : 112000
+    }
+  },
+    "review" : {
+      "chiken" : {
+        "avg" : 5,
+        "contents" : "칰멘"
+      },
+      "pizza" : {
+        "avg" : 2,
+        "contents" : "느끼느끼"
+      }
+    },
+    "seat" : 5 ,
+    "complete" : {
+      "0614140030": {
+        "seat" : 3,
+        "foods" : {
+          "chiken" : {
+            "number" : 5,
+            "sum" : 90000
+          },
+          "pizza" : {
+            "number" : 3,
+            "sum" : 60000
+          }
+        },
+      "sum" : 112000
+    },
+    "0616140030": {
+      "seat" : 1,
+      "foods" : {
+        "chiken" : {
+          "number" : 4,
+          "sum" : 80000
+        },
+        "pizza" : {
+          "number" : 2,
+          "sum" : 10000
+        }
+      },
+    "sum" : 90000
+  },"0716140030": {
+    "seat" : 2,
+    "foods" : {
+      "chiken" : {
+        "number" : 5,
+        "sum" : 120000
+      },
+      "pizza" : {
+        "number" : 9,
+        "sum" : 55000
+      }
+    },
+  "sum" : 175000
+  }
+    }
+  }
+}

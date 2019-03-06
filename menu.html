@@ -1,0 +1,111 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="semantic/semantic.min.js"></script>
+<title> Team. Roas</title>
+
+<style>
+div.layout{
+  position:absolute;
+  top: 100px;
+  left:50%;
+  transform:translate(-50%, -0%)
+}
+.top{
+ position: fixed;
+ top: 2px;
+ right: 20px;
+}
+#viewId{
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 8px;
+}
+#btnLogout{
+  position: relative;
+  top: 5px;
+}
+.title{
+  font-weight: bold;
+  font-size: 15px;
+}
+#table{
+  width: 500px;
+  margin-top: 40px;
+}
+#row{
+  height: 20px;
+
+}
+.ui.inverted.black.button
+{
+  color: black;
+}
+.foodName{
+  width: 150px;
+  text-align: center;
+  margin-top: 5px;
+}
+.foodPrice{
+  width: 150px;
+  text-align: center;
+}
+.modify{
+  font-weight: bold;
+  direction: rtl;
+  padding:0px;
+  width: 100px;
+}
+.delete{
+  direciton: ltr;
+  pading: 0px;
+  width: 100px;
+}
+#bottom{
+  position: fixed;
+  bottom: 25px;
+  left: 20px;
+}
+#complete{
+  margin-right: 10px;
+  font-weight: bold;
+}
+#add{
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+  <p class="top">
+    <label id="viewId"> </label>
+    <button id="btnLogout" class="small ui red basic button">
+    Logout
+    </button>
+  </p>
+  <div class="layout">
+  <p class="title">
+    메뉴 확인
+  </p>
+  <table id="table" class="ui very basic table">
+
+  </table>
+</div>
+  <div id="bottom">
+    <button id="complete" class="ui black basic button"> 완 료 </button>
+    <button id="add" class="ui black basic button">메뉴 추가</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="menuApp.js"></script>
+</body>
+</html>

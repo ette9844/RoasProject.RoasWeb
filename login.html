@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title> Welcome to Tema. Roas </title>
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+var config = {
+  apiKey: "AIzaSyBVBviTsUBRT-mvzBwVul5Lzy7kSbtjUqU",
+  authDomain: "project-a156d.firebaseapp.com",
+  databaseURL: "https://project-a156d.firebaseio.com",
+  projectId: "project-a156d",
+  storageBucket: "project-a156d.appspot.com",
+  messagingSenderId: "967997686089"
+};
+firebase.initializeApp(config);
+</script>
+
+<body>
+  <script>
+  auth.onAuthStateChanged(function(user){
+	  if(user){
+		  //auth success
+		  console.log("success");
+		  console.log(user);
+		  //memo list
+		  //userInfo=user;
+		  get_memo_list();
+
+	  } else{
+		  //auth fail
+		  console.log("fail")
+	  }
+  });
+  </script>
+</body>
+</html>

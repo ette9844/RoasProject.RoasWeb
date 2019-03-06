@@ -1,0 +1,149 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="semantic/semantic.min.js"></script>
+<title> Team. Roas</title>
+<style>
+body{
+  height: 90%;
+}
+.title{
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+}
+.middle{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#detail{
+  width: 100px;
+}
+.name{
+  width: 75px;
+}
+#name{
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+  color: black;
+}
+#price{
+  margin-left: 5px;
+  width: 100px;
+  height: 20px;
+}
+.content{
+  vertical-align: top;
+  padding-top: 5px;
+}
+#content{
+  height: 300px;
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pic{
+  vertical-align: top;
+  padding-top: 5px;
+  text-align: center;
+  width: 75px;
+  height: 30px;
+}
+#pic{
+  padding-left: 5px;
+  width: 300px;
+  height: 30px;
+}
+.button{
+  position: fixed;
+  left: 120px;
+}
+#complete{
+  font-weight: bold;
+}
+#cencle{
+  position: fixed;
+  left: 200px;
+  font-weight: bold;
+}
+#image{
+  width: inherit;
+  height: inherit;
+}
+#disable{
+  position: fixed;
+  width: 500;
+  height: 550;
+  background-color: white;
+  z-index:1;
+}
+.upload_text{
+  position: fixed;
+  top:40%;
+  left:35%;
+  transform:translate(-50%, -50%)
+  z-index:1;
+}
+.upload_image{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%)
+}
+</style>
+</head>
+<body>
+  <div id="disable" hidden="true">
+    <img class ="upload_image" src="image/loading.png"/>
+    <h1 class="upload_text">업로드 중</h1>
+  </div>
+<div class="title">메뉴 수정</div>
+<div class="middle">
+  <table id="datail">
+    <tr>
+      <td class="name">메뉴이름: </td>
+      <td>
+        <div class="ui disabled input">
+          <input tpye="text" id="name">
+        </div>
+      </td>
+      <td class="price">가격: </td>
+      <td>
+        <textarea id="price"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td class="content">상세설명</td>
+      <td colspan="4">
+        <textarea id="content"></textarea>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td class="pic">사 진</td>
+      <td>
+        <form method="post" name="pic">
+          <input type="file" name="pic" id="pic">
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="button">
+  <button id="complete" class="ui black basic button">완료</button>
+  <button id="cencle" class="ui black basic button">취소</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="modifyApp.js"></script>
+</body>
+</html>

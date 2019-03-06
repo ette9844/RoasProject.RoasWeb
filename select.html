@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Team. Roas</title>
+
+<link href="./Metro/build/css/metro.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./Metro/build/js/metro.min.js"></script>
+<!--
+Metro 를 사용
+-->
+<style>
+div.layout{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%)
+}
+button.move{
+  width: 230px;
+  height: 200px;
+  font-size: 250%;
+}
+#btnLogout{
+  color: red;
+  border-color: red;
+}
+label{
+  margin-right: 4px;
+}
+p.top{
+  position: relative;
+  top: 4%;
+  left: 70%;
+  font-size: 18px;
+}
+</style>
+
+</head>
+<body>
+    <p class="top">
+    <label id="viewId"> </label>
+    <button id="btnLogout" class="button rounded">
+    Logout
+    </button>
+    </p>
+  <div class="layout">
+    <button id="btnCounter" class="button rounded move">
+      카운터 </br>Web Page
+    </button>
+    <button id="btnKitchen" class="button rounded move">
+      주방 </br>Web Page
+    </button>
+  </div>
+  <!--
+  해당 Web Page로 이동할수 있는 버튼
+  Logout 할수 있는 버튼
+  id를 표시해줌
+  -->
+
+  <!--web app manifest-->
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+  <script src="selectApp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "short_name" : "Roas",
+  "name" : "Roas's web app",
+  "background-color" : "#B22222",
+  "theme_color" : "#B22222",
+  "icons" : [
+    {
+      "src" : "RoasIcon_48.png",
+      "type" : "image/png",
+      "sizes" : "48x48"
+    },
+    {
+      "src" : "RoasIcon_72.png",
+      "type" : "image/png",
+      "sizes" : "72x72"
+    },
+    {
+      "src" : "RoasIcon_144.png",
+      "type" : "image/png",
+      "sizes" : "144x144"
+    }
+  ],
+  "//" : "Some browser will use this to enable push notification.",
+  "//" : "It is the same for all projects, this is not your project's sender ID",
+  "gcm_sender_id" : "103953800507"
+}
